@@ -19,6 +19,9 @@ const fetchData = async (e) => {
   const data = await response.json();
   if (data.cod === '404') {
     input.placeholder = 'sorry! location not found.';
+    setInterval(() => {
+      input.placeholder = 'Search location';
+    }, 2000);
     input.value = '';
     return;
   }
