@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  font-family: 'montserrat', sans-serif;
+}
+#container::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('https://images.unsplash.com/photo-1572376636973-049ac950cb53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2701&q=80');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+.wrapper {
+  width: 390px;
+  height: 580px;
+  padding: 10px 14px;
+  z-index: 100;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  background: #000000d0;
+  box-shadow: -4px -4px 10px black;
+  background-size: cover;
+  background-position: top center;
+}
+nav > h2 {
+  text-align: center;
+  margin: 10px 0px 16px;
+  color: teal;
+}
+form {
+  width: 90%;
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+}
+
+form > input {
+  width: 100%;
+  padding: 10px 16px;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  color: white;
+  border-radius: 16px 0px 16px 0px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 3px solid #df8e00;
+}
+form > input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+form > input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+form > button {
+  display: none;
+}
+#location {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px 0px 10px;
+}
+#date {
+  margin-bottom: 26px;
+  font-weight: 100;
+  font-size: 14px;
+}
+#temp {
+  font-size: 56px;
+  font-weight: 400;
+}
+#temp > span {
+  font-size: 28px;
+  font-weight: 100;
+}
+#temp + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#desc {
+  font-size: 18px;
+  font-weight: 100;
+}
+#other_info {
+  position: relative;
+  padding: 40px 0px;
+  margin: 0px 20px;
+  border-radius: 50%;
+  border: none;
+  border-top: 2px solid tomato;
+}
+#other_info > #sunrise {
+  position: absolute;
+  top: 36%;
+  left: -18px;
+}
+#other_info > #sunset {
+  position: absolute;
+  top: 36%;
+  right: -18px;
+}
+#other_info > p {
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 7px;
+}
+#my-info {
+  border-top: 2px solid teal;
+  padding: 8px 0px;
+  font-size: 15px;
+}
+#my-info > span {
+  font-weight: bold;
+}
+#my-info > a {
+  color: white;
+  margin: 0px 6px;
+}
